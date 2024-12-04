@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             ListView listView = findViewById(R.id.listview);
             String string[] = {
-                    "General Knowledge","Sports","History","Art","Computer","Maths","Science & Nature"
+                    "General Knowledge","Sports","History","Art","Computer","Maths","Vehicle","Politics","Gadgets","Books","Video Games","Science & Nature"
             };
             ImageView imageView =findViewById(R.id.music);
             imageView.setOnClickListener(new View.OnClickListener() {
@@ -81,10 +81,35 @@ public class MainActivity extends AppCompatActivity {
                         intent.putExtra("id","18");
                         startActivity(intent);
 
-                    } else if (position==6){
-                        intent.putExtra("id","19");
+                    } else if (position==6) {
+                        intent.putExtra("id", "19");
                         startActivity(intent);
-                    }else {
+                    }
+                    else if (position ==7) {
+                        intent.putExtra("id", "12");
+                        startActivity(intent);
+                    }
+                    else if (position ==8) {
+                        intent.putExtra("id", "24");
+                        startActivity(intent);
+                    }
+                    else if (position ==9) {
+                        intent.putExtra("id", "12");
+                        startActivity(intent);
+                    }
+                    else if (position ==8) {
+                        intent.putExtra("id", "30");
+                        startActivity(intent);
+                    }
+                    else if (position ==9) {
+                        intent.putExtra("id", "10");
+                        startActivity(intent);
+                    }
+                    else if (position ==10) {
+                        intent.putExtra("id", "15");
+                        startActivity(intent);
+                    }
+                    else {
                         intent.putExtra("id","17");
                         startActivity(intent);
                     }

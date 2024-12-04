@@ -87,13 +87,13 @@ public class MainActivity2 extends AppCompatActivity {
                         recyclerView.setAdapter(adapter);
                            progressDialog.dismiss();
                     } catch (JSONException e) {
-                        throw new RuntimeException(e);
                     }
                 }
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     progressDialog.dismiss();
+
                 }
             });
             requestQueue.add(obj);
